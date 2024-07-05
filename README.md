@@ -14,7 +14,8 @@ The **Camera Blocker** browser extension is designed to enhance your online priv
 
 ## Screenshots
 
-![Screenshot](https://github.com/hn-iiitd/CameraBlocker/blob/main/Screenshot.png)
+![Screenshot1](https://github.com/hn-iiitd/CameraBlocker/blob/main/Screenshot.png)
+![Screenshot2](https://github.com/hn-iiitd/CameraBlocker/blob/main/Screenshot%202024-07-05%20161803.png)
 ## How It Works
 
 1. **Toggle Camera Access**:
