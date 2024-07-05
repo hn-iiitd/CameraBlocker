@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Camera Blocker",
+    "version": "1.0.1",
+    "description": "Enables or disables the webcam for all websites.",
+    "permissions": [
+        "contentSettings",
+        "storage"
+      ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "128": "icon.png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    }
+  }
+  

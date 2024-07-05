@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Camera Blocker</title>
+    <style>
+        body {
+            width: 250px;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .toggle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .slider {
+            position: relative;
+            width: 60px;
+            height: 34px;
+        }
+
+        .slider input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider-toggle {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider-toggle:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider-toggle {
+            background-color: #2196F3;
+        }
+
+        input:checked + .slider-toggle:before {
+            transform: translateX(26px);
+        }
+
+        #status {
+            font-size: 18px;
+            color: #555;
+        }
+
+        #camera-status {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Camera Blocker</h2>
+    <div class="toggle-container">
+        <label class="slider">
+            <input type="checkbox" id="camera-toggle">
+            <span class="slider-toggle"></span>
+        </label>
+    </div>
+    <p id="status">Camera is <span id="camera-status">allowed</span>.</p>
+
+    <script src="popup.js"></script>
+</body>
+</html>
